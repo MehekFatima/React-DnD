@@ -1,0 +1,96 @@
+/* cardNode.css */
+
+/* Ensure card-node-container is relatively positioned */
+.card-node-container {
+    position: relative;
+}
+
+.card-node {
+    background: white;
+    border: 1px solid #ddd; /* Single border */
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative; /* Allows modal to be positioned relative to this element */
+    box-sizing: border-box;
+}
+
+.card-content {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hide overflow text with ellipsis */
+    white-space: nowrap;
+}
+
+.show-more-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    color: black;
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 20px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+    background: #dadaf0;
+    width: 20px;
+    border-radius: 50%;
+}
+
+/* React Flow arrow styles */
+.react-flow__edge {
+    stroke: blue !important;
+    stroke-width: 2px;
+}
+
+.react-flow__handle {
+    background-color: blue !important;
+    border: 1px solid blue;
+}
+
+
+/* Add these styles to cardNode.css or a separate CSS file */
+
+.input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.add-card-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
